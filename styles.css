@@ -1,0 +1,58 @@
+:root {
+  /* COLORS */
+  --white-color: hsl(0, 0%, 100%);
+  --grayis-blue-color: hsl(220, 15%, 55%);
+  --light-gray-color: hsl(212, 45%, 89%);
+  --dark-blue-color: hsl(218, 44%, 22%);
+
+  /* FONTS */
+  --outfit-ff: Outfit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* CSS uses content-box as default this will not inclue width, padding or border to calculate the height and width */
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-gray-color);
+  font-family: var(--outfit-ff, sans-serif);
+  font-size: 15px;
+}
+
+.card {
+  background-color: var(--white-color);
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 12%;
+  padding: 15px 15px 30px 15px;
+  border-radius: 10px;
+}
+
+.card__img {
+  display: block;
+  height: 200px;
+  width: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.card__title, .card__text {
+  text-align: center;
+  width: 95%;
+}
+
+.card__title {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: var(--dark-blue-color);
+}
+
+.card__text {
+  font-size: 11px;
+  color: var(--grayis-blue-color);
+}
+
